@@ -1,4 +1,4 @@
-# okay设置-逆向分析
+# okay设置-逆向分析（测试型号s4/s4pro/x510）
 设置测栏底部空白-7次点击-弹窗密码
 ## 反编译得到DevelopmentUtils.smali并分析代码逻辑
  ```
