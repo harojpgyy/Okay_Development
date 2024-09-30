@@ -8,3 +8,13 @@
 拼接123并格式md5
 生成哈希值并取后六位
  ```
+以下为示例
+ ```
+#!/bin/bash
+sn=11145 #sn序列号
+today=$(date +%Y%m%d)
+okay=010@okay.cn
+string="$sn$today$okay"
+hash=$(echo -n "$string" | md5sum | cut -d ' ' -f 1 | tail -c 6)
+echo "$hash" #输出密码
+ ```
